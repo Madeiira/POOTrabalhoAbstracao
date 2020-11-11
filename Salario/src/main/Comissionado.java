@@ -1,32 +1,47 @@
 package main;
 
-public class Comissionado extends Empregado{
- 
+public class Comissionado extends Empregado {
+
 	private double totalVendas;
 	private double taxaComissao = 0.2;
-	
+
 	public Comissionado(double totalVendas) {
-		
+
 		this.totalVendas = totalVendas;
 
+	}
+
+	public double Vencimento() {
+
+		return totalVendas * taxaComissao;
 
 	}
-	
-	public double Vencimento() {
-		
-		return totalVendas * taxaComissao;
-	
-	}
-	
+
 	String getCpf() {
-		return "343.451.231-89";
+		return cpf;
 	}
-	
+
 	String getSobrenome() {
-		return "Long";
+		return sobrenome;
 	}
-	
+
 	String getNome() {
-		return "Joana";
+		return nome;
+	}
+
+	String setCpf(String cpf) {
+		return this.cpf = cpf;
+	}
+
+	String setSobrenome(String sobrenome) {
+
+		return this.sobrenome = sobrenome;
+
+	}
+
+	String setNome(String nome) {
+
+		return this.nome = nome;
+
 	}
 }

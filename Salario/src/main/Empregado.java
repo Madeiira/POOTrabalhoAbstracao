@@ -6,15 +6,18 @@ public abstract class Empregado {
 	protected String sobrenome;
 	protected String cpf;
 
-	
-	abstract String  getCpf();
-	
+	abstract String getCpf();
+
 	abstract String getSobrenome();
-	
+
 	abstract String getNome();
-	
-	
-	  public abstract double Vencimento();
-	  
+
+	abstract String setCpf(String cpf);
+
+	abstract String setSobrenome(String sobrenome);
+
+	abstract String setNome(String nome);
+
+	public abstract double Vencimento();
 
 }
